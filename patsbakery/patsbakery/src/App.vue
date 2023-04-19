@@ -4,14 +4,19 @@
       <img alt="Pat's Bakery Logo" src="../src/assets/PatsBakeryLogo.png" width="700" height="105">
     </header>
     <nav>
-      <router-link to="/">Home</router-link>
+      <!-- <router-link to="/">Home</router-link> -->
+      <!-- <router-link to="/login">Login</router-link> -->
       <router-link to="/addorder">Add Order</router-link>
+      <router-link to="/orders">All Orders</router-link> 
+      <router-link to="/dailysales">Daily Sales</router-link>
+      <router-link to="/weeklysales">Weekly Sales</router-link>
+      <router-link to="/monthlysales">Monthly Sales</router-link> 
     </nav>
     <router-view/>
   </div>
 </template>
 
-<!-- <script>
+<script>
 import store from '@/store/index.js';
 
 export default {
@@ -21,7 +26,7 @@ export default {
     }
   }
 }
-</script> -->
+</script>
 
 <style>
 html {
