@@ -39,7 +39,7 @@ export default {
     getOrders: function() {
         var vm = this;
 
-        fetch("http://localhost/Systems Analysis and Design/patsbakery/src/php/getMonthlySales.php")
+        fetch("http://localhost/Systems Analysis and Design/patsbakery/src/php/getDailySales.php")
         .then(response => response.json())
         .then(function(data){
             vm.orders = data.orders;

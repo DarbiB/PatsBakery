@@ -9,7 +9,7 @@
     $res["status"] = "error";
     $res["status_message"] = "MySQL connection error";
  } else {
-    $stmt = $conn->prepare("SELECT * FROM orders WHERE orders.date = CURRDATE()");
+    $stmt = $conn->prepare("SELECT * FROM orders WHERE orders.date = CURDATE();");
     if($stmt->execute()) {
         $result = $stmt->get_result();
 
